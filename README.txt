@@ -1,18 +1,51 @@
 # Reservas de buses por tramos (Proyecto final Python · Tema 5)
 
-Aplicación 100 % de consola. Solo usa lo visto en el curso: archivos, ciclos, ciclos anidados,
-conceptos básicos, control de errores (`try/except`), diccionarios, listas/matrices, funciones y strings.
-**No importa ninguna librería externa** (ni numpy, csv, os, sys o datetime); los CSV se leen con `split(",")`.
+Aplicación 100 % de consola para gestionar reservas de buses intermunicipales por tramos de ruta.
+Una misma silla se puede vender para trayectos que no se superponen. El sistema maneja reservas de solo ida,
+ida y regreso en una transacción, cancelación, manifiestos y reportes de ocupación e ingresos.
 
-## Ejecutar
-Desde la carpeta del proyecto (donde están los `.py` y la carpeta `datos/`):
+Solo usa lo visto en el curso: archivos, ciclos, ciclos anidados, conceptos básicos, control de errores
+(`try/except`), diccionarios, listas/matrices, funciones y strings.
+
+## Instalación paso a paso
+1. Instalar Python 3 desde https://www.python.org/downloads/ (en Windows, marcar la casilla «Add Python to PATH» durante la instalación).
+2. Comprobar la instalación abriendo una terminal y escribiendo:
+```
+python --version
+```
+3. Descargar el proyecto. Opción A, con Git:
+```
+git clone https://github.com/Miguel1455/proyecto_reservas_buses.git
+```
+Opción B, sin Git: en la página del repositorio, botón verde **Code** → **Download ZIP**, y descomprimir.
+4. Entrar a la carpeta del proyecto (la que contiene `main.py` y la carpeta `datos`):
+```
+cd proyecto_reservas_buses
+```
+Si se descargó el ZIP, la carpeta descomprimida se llama `proyecto_reservas_buses-main`.
+5. Ejecutar el programa:
 ```
 python main.py
+```
+(En algunos equipos el comando es `python3 main.py` o `py main.py`.)
+
+## Dependencias
+No hay que instalar nada: el proyecto solo usa Python estándar, sin librerías externas
+(no usa numpy, csv, os, sys ni datetime). No se requiere `pip install`.
+
+## Archivos adicionales
+El proyecto no usa bases de datos, variables de entorno ni recursos estáticos particulares.
+Los datos semilla son archivos CSV que ya vienen dentro del repositorio, en la carpeta `datos/`;
+no hay que importar ni configurar nada. La carpeta `datos/reservas/` debe existir para que el
+programa pueda guardar las reservas (viene incluida).
+
+## Ejecutar las pruebas automáticas
+Desde la misma carpeta:
+```
 python pruebas.py
 ```
-- `main.py` abre el menú y usa la carpeta `datos/`. Para usar otra, cambie `CARPETA_DATOS` en `main.py`.
-- `pruebas.py` ejecuta 12 comprobaciones automáticas sobre `datos_prueba/` (la deja en estado semilla al empezar).
-- Las carpetas `datos/` y `datos/reservas/` deben existir (vienen incluidas; sin `os` el programa no puede crearlas).
+Ejecuta 12 comprobaciones sobre `datos_prueba/` (la deja en estado semilla al empezar).
+Para que `main.py` use otra carpeta de datos, se cambia `CARPETA_DATOS` en `main.py`.
 
 ## Archivos
 | Archivo / carpeta | Rol |
@@ -35,6 +68,16 @@ Archivos que el programa crea o actualiza:
 - `indice_reservas.csv`: en qué servicio y fecha está cada reserva (sirve para ubicar la ida y el regreso al cancelar).
 - `movimientos.csv`: historial de operaciones; solo se agrega, nunca se borra.
 - `reporte_ruta.txt` y `ocupacion_tramos.csv`: cada reporte se agrega como una nueva «corrida»; no se sobrescriben los anteriores.
+
+## Menú
+1. Buscar servicio, fecha y recorrido
+2. Ver mapa de asientos para un trayecto
+3. Reservar viaje solo de ida
+4. Reservar ida y regreso en una transacción
+5. Consultar tiquetes y cancelar transacción
+6. Consultar manifiesto por servicio y fecha
+7. Analizar ocupación e ingresos por ruta y fechas
+0. Guardar y salir
 
 ## Formatos de silla aceptados
 - `2A` (fila + letra).
@@ -65,4 +108,4 @@ Partiendo de los datos semilla de `datos/`:
 | 8 Cancelación | Opción 5 → 3 sobre una transacción activa; repetirlo | Pasa a CANCELADA y la silla queda libre; la segunda vez se rechaza. |
 | 9 Errores | Fecha `2026-02-30`, silla `9Z`, opción `99`, destino anterior al origen | Mensaje de error y el programa continúa. |
 
-`python pruebas.py` automatiza estos casos (resultado de ejemplo en `ejemplos_salida/resultado_pruebas.txt`).
+Un resultado de ejemplo de `pruebas.py` está en `ejemplos_salida/resultado_pruebas.txt`.
