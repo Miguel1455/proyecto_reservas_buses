@@ -1,0 +1,9 @@
+ruta,posicion,codigo
+R1,0,MED
+R1,1,RIO
+R1,2,MAR
+R1,3,BOG
+R2,0,BOG
+R2,1,MAR
+R2,2,RIO
+R2,3,MED

@@ -1,0 +1,14 @@
+PASA  Carga inicial real (servicios, rutas y tarifas)
+PASA  1. Reutilización legal: MED→RIO y RIO → BOG coexisten en 2A
+PASA  2. Solapamiento bloqueado: MED→MAR rechazado en 2A y sin cambios en archivo
+PASA  3. Precio por sumatoria:  REGULAR 50.000 y PREMIUM 75.000
+PASA  4. Ida y vuelta: subtotal 100.000, descuento 10.000, total 90.000
+PASA  5. Atomicidad: regreso 2B ocupado -> no hay ida ni tiquete
+PASA  6. Persistencia temporal: 3C ocupada el 12 pero libre el 13 (archivos distintos)
+PASA  7. Reinicio: se recuperan 4 reservas del 12 sin duplicar y 5 transacciones
+PASA  8. Cancelación: reserva queda CANCELADA (no se borra) y la silla se libera
+PASA  9. Transición prohibida: no se puede cancelar dos veces
+PASA  10. Errores controlados: fecha 2026-02-30, silla 9Z y destino anterior al origen
+PASA  11. Reporte: ingresos solo de transacciones ACTIVAS
+
+12 de 12 pruebas pasaron.

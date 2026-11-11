@@ -1,0 +1,3 @@
+transaccion_id,fecha,ida_reserva,regreso_reserva,subtotal,descuento,total,estado
+T001,2026-11-12,R001,,20000,0,20000,ACTIVA
+T002,2026-11-12,R002,R003,125000,12500,112500,ACTIVA

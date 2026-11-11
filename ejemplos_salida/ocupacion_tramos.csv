@@ -1,0 +1,4 @@
+corrida,servicio_id,fecha,tramo,origen,destino,ocupadas,capacidad,porcentaje
+1,B001,2026-11-12,1,MED,RIO,2,16,12.5
+1,B001,2026-11-12,2,RIO,MAR,1,16,6.2
+1,B001,2026-11-12,3,MAR,BOG,0,16,0.0

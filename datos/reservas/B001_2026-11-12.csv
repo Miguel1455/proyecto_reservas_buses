@@ -1,0 +1,2 @@
+reserva_id,pasajero_id,silla,origen,destino,precio,estado,transaccion_id
+R001,C01,2A,MED,RIO,20000,ACTIVA,T001

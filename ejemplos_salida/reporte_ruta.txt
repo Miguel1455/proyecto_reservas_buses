@@ -1,0 +1,18 @@
+===== CORRIDA 1 =====
+REPORTE DE RUTA R1 (MED-RIO-MAR-BOG) | 2026-11-12 a 2026-11-13
+
+--- Ocupación por tramo (sillas ocupadas / capacidad) ---
+B001 | 2026-11-12 | salida 08:00
+  MED→RIO: 2/16 (12.5 %)
+  RIO→MAR: 1/16 (6.2 %)
+  MAR→BOG: 0/16 (0.0 %)
+  Pico: 2/16 en MED→RIO
+Pico global: 2 sillas en B001 2026-11-12, tramo MED→RIO
+
+--- Ingresos activos (por transacción; ruta = ruta del viaje de ida) ---
+Transacciones ACTIVAS: 2 | Total: $132.500
+
+--- Top 3 trayectos por pasajeros (empate: orden alfabético) ---
+  1. MED→MAR — 1 pasajeros
+  2. MED→RIO — 1 pasajeros
+

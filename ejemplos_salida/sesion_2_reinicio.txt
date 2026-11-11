@@ -1,0 +1,38 @@
+Datos cargados desde datos/
+
+=============== RESERVAS INTERMUNICIPALES ===================
+1.  Buscar servicio, fecha y recorrido
+2. Ver mapa de asientos para un trayecto
+3. Reservar viaje solo de ida
+4 . Reservar ida y regreso en una transacción
+5. Consultar tiquetes y cancelar transacción
+6.  Consultar manifiesto por servicio y fecha
+7. Analizar ocupación e ingresos por ruta y fechas
+0. Guardar y salir
+Seleccione una opción: 
+--- TIQUETES Y CANCELACIÓN ---
+1. Consultar por transacción
+2. Consultar por pasajero
+3. Cancelar transacción
+0. Volver
+Opción: Identificación del pasajero (0 = cancelar): Transacción T002 | ACTIVA | fecha 2026-11-12
+  Subtotal $125.000 | Descuento $12.500 | Total $112.500
+  IDA     R002 | B001 2026-11-12 08:00 | MED→MAR | silla 2B | pasajero C10 | $50.000 | ACTIVA
+  REGRESO R003 | B002 2026-11-13 17:00 | MAR→MED | silla 1A | pasajero C10 | $75.000 | ACTIVA
+
+--- TIQUETES Y CANCELACIÓN ---
+1. Consultar por transacción
+2. Consultar por pasajero
+3. Cancelar transacción
+0. Volver
+Opción: 
+=============== RESERVAS INTERMUNICIPALES ===================
+1.  Buscar servicio, fecha y recorrido
+2. Ver mapa de asientos para un trayecto
+3. Reservar viaje solo de ida
+4 . Reservar ida y regreso en una transacción
+5. Consultar tiquetes y cancelar transacción
+6.  Consultar manifiesto por servicio y fecha
+7. Analizar ocupación e ingresos por ruta y fechas
+0. Guardar y salir
+Seleccione una opción: Todo quedó guardado en los archivos. ¡Hasta pronto!
